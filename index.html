@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>それって「普通」ですか？— AIで変わる未来の普通</title>
+  <meta name="description" content="ゼミ発表用：AIの発展による未来の普通を考察するシングルページサイト。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="brand">ゼミ発表 <span class="badge">Web</span></div>
+      <a href="#now">今の“<strong>普通</strong>”</a>
+      <a href="#future">未来シナリオ</a>
+      <a href="#bi">ベーシックインカム</a>
+      <a href="#value">新しい価値</a>
+      <a href="#happy">“普通”と幸福</a>
+      <a href="#essence">本質</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>それって「<span class="em">普通</span>」ですか？<br>— AIの発展がつくる未来の“普通”</h1>
+    <p>HTML/CSS/JavaScriptのみで構成したプレゼン用シングルページ。キーボード ←/→ でセクション移動。</p>
+    <div class="meta">
+      <span class="pill">テーマ：社会の“普通”の再設計</span>
+      <span class="pill">視点：AI×労働×幸福</span>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- 今の普通 -->
+    <section id="now" class="fade card" tabindex="0" aria-labelledby="h-now">
+      <h2 id="h-now">現在の人間生活の“普通”</h2>
+      <div class="grid g2">
+        <div>
+          <h3>定義（いま）</h3>
+          <p>多くの人にとって“普通”とは、<strong>未来の自分の生活のために働く</strong>こと。雇用・安定・経済的成功を軸に、人生が設計されています。</p>
+          <ul>
+            <li>学ぶ → 働く → 消費する の直線モデル</li>
+            <li>幸福＝経済的達成（年収・肩書など）</li>
+            <li>基準は社会・他者との相対比較に依存</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>あなたの“普通”スコア</h3>
+          <p>「生活のために働いている」と感じる度合いは？</p>
+          <div class="meter">
+            <input type="range" id="score" min="0" max="100" value="60" aria-label="普通スコア">
+          </div>
+          <div class="kpi" style="margin-top:8px">
+            <div class="num" id="scoreNum">60</div>
+            <div id="scoreLabel" class="tag">生活優先</div>
+          </div>
+          <p class="muted" style="color:var(--muted); margin-top:8px">数値は端末内だけで保存されます（ローカル）。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 未来シナリオ -->
+    <section id="future" class="fade card" tabindex="0" aria-labelledby="h-future">
+      <h2 id="h-future">実現可能性シナリオ</h2>
+      <div class="timeline grid g2" style="gap:24px">
+        <div class="t-item">
+          <div class="t-dot" aria-hidden="true"></div>
+          <h3>2030年代：労働時間が段階的に短縮</h3>
+          <p>平均労働時間が <strong>週30時間→20時間</strong> へ。<span class="tag">週休4日</span> が普及し、ワークライフバランスが大幅に改善。</p>
+        </div>
+        <div class="t-item">
+          <div class="t-dot" aria-hidden="true" style="background:var(--accent)"></div>
+          <h3>2040年代：衣食住が担保される“普通”</h3>
+          <p>基礎所得＋公共配当が常設化し、<strong>働かなくても衣食住は標準で担保</strong>。働くことは<strong>選好</strong>へ。</p>
+          <ul>
+            <li>“贅沢”を求めなければ、労働は不要に近づく</li>
+            <li>絶対的貧困は縮小するが、<strong>相対的貧困</strong>は残る課題</li>
+            <li>労働の目的が「生活維持」→「付加価値の購入」にシフト</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BI -->
+    <section id="bi" class="fade card" tabindex="0" aria-labelledby="h-bi">
+      <h2 id="h-bi">ベーシックインカム（BI）は何をもたらすか</h2>
+      <div class="compare">
+        <div class="card">
+          <h3>ポジティブな変化</h3>
+          <ul>
+            <li>大学進学の機会が拡大し、「本当に学びたいこと」にアクセス</li>
+            <li>就職のためだけの進学からの解放 → 多様な学びの軸</li>
+            <li>挑戦コストの低下：起業・創作・地域活動がしやすくなる</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>生まれる問い</h3>
+          <ul>
+            <li>「大学に行く必要はある？」資格の意味づけが再編</li>
+            <li>相対的な格差認知と承認欲求の再設計</li>
+            <li>勤労インセンティブや税制・財源設計の新たなバランス</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 新しい価値 -->
+    <section id="value" class="fade card" tabindex="0" aria-labelledby="h-value">
+      <h2 id="h-value">AI時代に生まれる“価値”</h2>
+      <div class="grid g3">
+        <div class="card">
+          <h3>人間の“ゆらぎ”が価値</h3>
+          <p>AIが模倣を極めるほど、<strong>不完全さ</strong>や<strong>感情のゆらぎ</strong>にプレミアムがつく。</p>
+          <span class="tag">手作り / 生演奏 / 直筆</span>
+        </div>
+        <div class="card">
+          <h3>体験の自給</h3>
+          <p>農家でなくても「<strong>自分の食べ物を自分で作る</strong>」といった体験価値が拡張。</p>
+          <span class="tag">共同菜園 / メイカースペース</span>
+        </div>
+        <div class="card">
+          <h3>編集の時代</h3>
+          <p>誰もがAIと共創し、<strong>何を生み出すか → どう生きるか</strong>へ軸が移る。</p>
+          <span class="tag">選択設計 / 意味づけ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 幸福 -->
+    <section id="happy" class="fade card" tabindex="0" aria-labelledby="h-happy">
+      <h2 id="h-happy">“普通”と幸福</h2>
+      <div class="grid g2">
+        <div>
+          <h3>現在の軸</h3>
+          <ul>
+            <li>労働・安定が中心</li>
+            <li>幸せ＝経済的成功という物差し</li>
+          </ul>
+        </div>
+        <div>
+          <h3>未来の軸</h3>
+          <ul>
+            <li>「何を生み出すか」より「<strong>どう生きるか</strong>」へ</li>
+            <li>時間と注意の再配分が幸福度を決める</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 本質 -->
+    <section id="essence" class="fade card" tabindex="0" aria-labelledby="h-essence">
+      <h2 id="h-essence">本質：”普通”は相互作用から生まれる</h2>
+      <ul>
+        <li>“普通”は <strong>社会・他者・自分</strong> の相互作用による<strong>相対概念</strong>。</li>
+        <li>テクノロジーの進化のたびに“普通”は<strong>再設計</strong>されてきた。</li>
+        <li>産業革命が「肉体の代替」を生んだように、AI革命は<strong>「思考の代替」</strong>を加速。</li>
+        <li>“普通”と“正しさ”は固定値ではなく、<strong>選択の設計</strong>へと移行する。</li>
+      </ul>
+      <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+        <button class="btn" id="printBtn" aria-label="ページを印刷">🖨 印刷用に出力</button>
+        <button class="btn" id="exportBtn" aria-label="要点をコピー">📋 要点をコピー</button>
+      </div>
+      <p class="footer">© ゼミ発表 / テーマ「それって普通ですか？」 — HTML/CSS/JSのみで実装</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
