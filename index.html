@@ -10,14 +10,18 @@
 </head>
 
 <body>
+  <a class="skip" href="#main">本文へスキップ</a>
   <header>
-    <nav class="nav">
+    <nav class="nav" aria-label="主要ナビゲーション">
       <div class="brand">ゼミ発表 <span class="badge">Web</span></div>
       <a href="#now">今の“<strong>普通</strong>”</a>
       <a href="#future">未来シナリオ</a>
       <a href="#bi">ベーシックインカム</a>
       <a href="#value">新しい価値</a>
       <a href="#happy">“普通”と幸福</a>
+      <a href="#human">代替困難性</a>
+      <a href="#reward">報酬の再設計</a>
+      <a href="#key">メッセージ</a>
       <a href="#essence">本質</a>
     </nav>
   </header>
@@ -31,7 +35,7 @@
     </div>
   </div>
 
-  <main class="container">
+  <main id="main" class="container">
     <!-- 今の普通 -->
     <section id="now" class="fade card" tabindex="0" aria-labelledby="h-now">
       <h2 id="h-now">現在の人間生活の“普通”</h2>
@@ -49,7 +53,7 @@
           <h3>あなたの“普通”スコア</h3>
           <p>「生活のために働いている」と感じる度合いは？</p>
           <div class="meter">
-            <input type="range" id="score" min="0" max="100" value="60" aria-label="普通スコア">
+            <input type="range" id="score" min="0" max="100" value="60" aria-label="普通スコア" />
           </div>
           <div class="kpi" style="margin-top:8px">
             <div class="num" id="scoreNum">60</div>
@@ -146,6 +150,68 @@
           </ul>
         </div>
       </div>
+    </section>
+
+    <!-- 代替困難性（人間の仕事の3軸） -->
+    <section id="human" class="fade card" tabindex="0" aria-labelledby="h-human">
+      <h2 id="h-human">人間の仕事は“代替困難性”で残る</h2>
+      <p>AI/ロボットが発展しても、次の3軸は人間が中心であり続けます。</p>
+      <div class="grid g3">
+        <div class="card">
+          <h3>① 予測不能性</h3>
+          <p>定型化できない状況への即興的判断。</p>
+          <ul>
+            <li>救急医療・災害対応</li>
+            <li>教育・カウンセリング</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>② 関係性</h3>
+          <p>人と人の信頼・感情の共鳴を扱う。</p>
+          <ul>
+            <li>看護・介護・接客・営業</li>
+            <li>アート・教育</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>③ 意味創造性</h3>
+          <p>価値や美を“創り出す”営み。</p>
+          <ul>
+            <li>研究・デザイン・物語制作</li>
+            <li>芸術・キュレーション</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 報酬の再設計 -->
+    <section id="reward" class="fade card" tabindex="0" aria-labelledby="h-reward">
+      <h2 id="h-reward">ベーシックインカム時代の“お金”と報酬</h2>
+      <div class="grid g2">
+        <div>
+          <h3>衣食住は“標準装備”へ</h3>
+          <ul>
+            <li>基礎所得＋公共配当で生存のための賃金の必然性が低下</li>
+            <li>働くことは「義務」から「選択」へ</li>
+          </ul>
+        </div>
+        <div>
+          <h3>新しいインセンティブ設計</h3>
+          <ul>
+            <li>不人気だが社会的に必要な仕事には高報酬＋リスペクト</li>
+            <li>お金＝自己実現・貢献の指標（多層通貨の可能性）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Message -->
+    <section id="key" class="fade card" tabindex="0" aria-labelledby="h-key">
+      <h2 id="h-key">Key Message</h2>
+      <blockquote class="quote">
+        <p>“普通”とは、社会に従うことではなく、<strong>自分の「存在」を選び取る</strong>ことだ。テクノロジーがすべてを自動化する時代、<strong>生きること自体</strong>が人間の創造行為になる。
+        </p>
+      </blockquote>
     </section>
 
     <!-- 本質 -->

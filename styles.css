@@ -7,12 +7,6 @@
   /* sky-300 */
   --accent: #a78bfa;
   /* violet-400 */
-  --good: #34d399;
-  /* green-400 */
-  --warn: #fbbf24;
-  /* amber-300 */
-  --bad: #fb7185;
-  /* rose-400 */
   --shadow: rgba(0, 0, 0, .4);
   --radius: 18px;
   --w: 1000px;
@@ -28,12 +22,26 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Meiryo", sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Meiryo", sans-serif
 }
 
 a {
   color: var(--brand);
   text-decoration: none
+}
+
+.skip {
+  position: absolute;
+  left: -9999px
+}
+
+.skip:focus {
+  left: 12px;
+  top: 12px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px
 }
 
 header {
@@ -61,6 +69,7 @@ header {
   color: var(--muted)
 }
 
+.nav a[aria-current="true"],
 .nav a:hover {
   background: #1a1d25;
   color: var(--fg)
@@ -299,7 +308,19 @@ li {
   transition: all .6s ease
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none
+  }
+}
+
 .fade.show {
   opacity: 1;
   transform: none
+}
+
+/* 追加スタイル：引用 */
+blockquote,
+.quote {
+  color: var(--fg)
 }
