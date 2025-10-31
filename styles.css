@@ -59,20 +59,27 @@ header {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px
+  padding: 10px 16px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.nav::-webkit-scrollbar { display: none; }
 
 .nav a {
   padding: 6px 10px;
   border-radius: 10px;
   font-size: 14px;
-  color: var(--muted)
+  color: var(--muted);
+  white-space: nowrap;
+  flex: 0 0 auto;
 }
 
 .nav a[aria-current="true"],
 .nav a:hover {
   background: #1a1d25;
-  color: var(--fg)
+  color: var(--fg);
 }
 
 .brand {
