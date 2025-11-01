@@ -114,6 +114,14 @@ When making changes, verify:
 - [ ] Layout is responsive on mobile (<860px)
 - [ ] Reduced motion preference is respected
 
+## Additional Formatting Instruction
+
+- After generating the final commit message or code content:
+- Perform full formatting of the entire output.
+- Indentation must be exactly 4 spaces.
+- If applying this formatting would reduce readability or alter layout meaning, explicitly notify the user and skip formatting for that section only.
+- Do not modify content semantics when formatting.
+
 
 ## 📝 Instruction
 After completing **all fixes or updates**, propose a **final commit message** in English using the [Gitmoji](https://gitmoji.dev/) convention.
