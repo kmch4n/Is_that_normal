@@ -10,10 +10,11 @@ const fadeIO = 'IntersectionObserver' in window ? new IntersectionObserver((entr
 }, {threshold: .1}) : null;
 for(const el of document.querySelectorAll('.fade')){ fadeIO ? fadeIO.observe(el) : el.classList.add('show'); }
 
+let isManualNav = false;
 const posIO = 'IntersectionObserver' in window ? new IntersectionObserver((ents)=>{
   for(const en of ents){ if(en.isIntersecting){
     const i = sections.indexOf(en.target);
-    if(i !== -1){
+    if(i !== -1 && !isManualNav){
       current = i;
       const id = sections[i].id;
       for(const a of navLinks){ a.setAttribute('aria-current', String(a.getAttribute('href') === `#${id}`)); }
@@ -67,8 +68,12 @@ if(exportBtn){
 function goto(i){
   if(i<0||i>=sections.length) return;
   current = i;
+  isManualNav = true;
   sections[i].scrollIntoView({behavior: prefersReduce ? 'auto' : 'smooth', block:'start'});
   sections[i].focus({preventScroll:true});
+  const id = sections[i].id;
+  for(const a of navLinks){ a.setAttribute('aria-current', String(a.getAttribute('href') === `#${id}`)); }
+  setTimeout(()=> isManualNav = false, prefersReduce ? 100 : 1000);
 }
 window.addEventListener('keydown', (e)=>{
   if(e.key==='ArrowRight') goto(Math.min(current+1, sections.length-1));
