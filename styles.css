@@ -347,8 +347,8 @@ li {
 }
 
 /* Warning box styles */
-.warning {
-  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.05));
+.warning.card {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.08)) !important;
   border-left: 4px solid #ffc107;
   padding: 16px 20px;
   margin-top: 24px
