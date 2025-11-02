@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>それって「普通」ですか？— AIで変わる未来の普通</title>
-  <meta name="description" content="ゼミ発表用：AIの発展による未来の普通を考察するシングルページサイト。" />
+  <title>それって"普通"ですか？— AIで変わる未来の普通</title>
+  <meta name="description" content="AIの発展による未来の普通を考察するシングルページサイト" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="https://github.com/favicon.ico" />
 
   <!-- Open Graph Protocol (for LINE preview) -->
-  <meta property="og:title" content="それって「普通」ですか？— AIで変わる未来の普通" />
-  <meta property="og:description" content="AIの発展による未来の普通を考察するシングルページサイト。" />
+  <meta property="og:title" content="それって&quot;普通&quot;ですか？— AIで変わる未来の普通" />
+  <meta property="og:description" content="AIの発展による未来の普通を考察するシングルページサイト" />
   <meta property="og:image" content="https://github.com/favicon.ico" />
   <meta property="og:url" content="https://kmch4n.github.io/Is_that_normal/" />
   <meta property="og:type" content="website" />
@@ -36,11 +36,12 @@
   </header>
 
   <div class="hero">
-    <h1>それって「<span class="em">普通</span>」ですか？<br>— AIの発展がつくる未来の“普通”</h1>
+    <h1>それって"<span class="em">普通</span>"ですか？<br>— AIの発展がつくる未来の"普通"</h1>
     <!-- <p>HTML/CSS/JavaScriptのみで構成したプレゼン用シングルページ。キーボード ←/→ でセクション移動。</p> -->
     <div class="meta">
-      <span class="pill">テーマ : 社会の"普通"の再設計</span>
-      <span class="pill">視点 : AI×労働×幸福</span>
+      <span class="pill">AIがもたらす社会の"普通"の再設計</span>
+      <span class="pill">「人間にしか出来ないこと」とはなにか</span>
+      <span class="pill">現在と未来の"普通"</span>
     </div>
   </div>
 
@@ -51,24 +52,25 @@
       <div class="grid g2">
         <div>
           <h3>定義（いま）</h3>
-          <p>多くの人にとって“普通”とは、<strong>未来の自分の生活のために働く</strong>こと。雇用・安定・経済的成功を軸に、人生が設計されています。</p>
+          <!-- <p></p> -->
           <ul>
-            <li>学ぶ → 働く → 消費する の直線モデル</li>
-            <li>幸福＝経済的達成（年収・肩書など）</li>
-            <li>基準は社会・他者との相対比較に依存</li>
+            <li>現代社会では、<strong>「働くことを通じて生活を成り立たせ、安定と安心を得る」</strong>という生き方が広く共有されており、それが"普通"である。</li>
+            <li>経済的な成功は、長らく「努力」や「幸福」の象徴とされてきた。</li>
+            <li>このような価値観は、産業社会以降の「労働中心の仕組み」や「生産性の向上を前提とした社会設計」に支えられてきた。</li>
           </ul>
+          <p>しかし、AIの進化はその前提「働くことが生きることの中心である」という考えを問い直しつつある。</p>
         </div>
         <div class="card">
-          <h3>あなたの“普通”スコア</h3>
-          <p>「生活のために働いている」と感じる度合いは？</p>
+          <h3>あなたのワークライフバランス</h3>
+          <p>仕事が生活に占める割合はどのくらいですか？</p>
           <div class="meter">
-            <input type="range" id="score" min="0" max="100" value="60" aria-label="普通スコア" />
+            <input type="range" id="score" min="0" max="100" value="60" aria-label="ワークライフバランス・スコア" />
           </div>
           <div class="kpi" style="margin-top:8px">
             <div class="num" id="scoreNum">60</div>
-            <div id="scoreLabel" class="tag">生活優先</div>
+            <div id="scoreLabel" class="tag">働きすぎ予備軍：向上心が強い反面、休むことに罪悪感を覚えていませんか？心と身体の余白を意識して。</div>
           </div>
-          <p class="muted" style="color:var(--muted); margin-top:8px">数値は端末内だけで保存されます（ローカル）。</p>
+          <p class="muted" style="color:var(--muted); margin-top:8px">数値がサーバーへ送信されることはありません。</p>
         </div>
       </div>
     </section>
