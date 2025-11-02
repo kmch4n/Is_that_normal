@@ -346,6 +346,26 @@ li {
   transform: none
 }
 
+/* Warning box styles */
+.warning {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.05));
+  border-left: 4px solid #ffc107;
+  padding: 16px 20px;
+  margin-top: 24px
+}
+
+.warning strong {
+  display: block;
+  color: #ffc107;
+  margin-bottom: 8px;
+  font-size: 1.1em
+}
+
+.warning p {
+  margin: 8px 0;
+  line-height: 1.6
+}
+
 /* 追加スタイル：引用 */
 blockquote,
 .quote {
