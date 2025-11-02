@@ -153,7 +153,8 @@ header {
 }
 
 section {
-  margin: 28px 0
+  margin: 28px 0;
+  scroll-margin-top: 80px
 }
 
 .card {
