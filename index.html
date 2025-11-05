@@ -2,257 +2,307 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>それって"普通"ですか？— AIで変わる未来の普通</title>
-  <meta name="description" content="AIの発展による未来の普通を考察するシングルページサイト" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>それって"普通"ですか？— AIで変わる未来の普通</title>
+    <meta name="description" content="AIの発展による未来の普通を考察するシングルページサイト" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="https://github.com/favicon.ico" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://github.com/favicon.ico" />
 
-  <!-- Open Graph Protocol (for LINE preview) -->
-  <meta property="og:title" content="それって&quot;普通&quot;ですか？— AIで変わる未来の普通" />
-  <meta property="og:description" content="AIの発展による未来の普通を考察するシングルページサイト" />
-  <meta property="og:image" content="https://github.com/favicon.ico" />
-  <meta property="og:url" content="https://kmch4n.github.io/Is_that_normal/" />
-  <meta property="og:type" content="website" />
+    <!-- Open Graph Protocol (for LINE preview) -->
+    <meta property="og:title" content="それって&quot;普通&quot;ですか？— AIで変わる未来の普通" />
+    <meta property="og:description" content="AIの発展による未来の普通を考察するシングルページサイト" />
+    <meta property="og:image" content="https://github.com/favicon.ico" />
+    <meta property="og:url" content="https://kmch4n.github.io/Is_that_normal/" />
+    <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <a class="skip" href="#main">本文へスキップ</a>
-  <header>
-    <nav class="nav" aria-label="主要ナビゲーション">
-      <div class="brand"><span class="badge">Web</span></div>
-      <a href="#now"><strong>普通</strong>とは何か</a>
-      <a href="#future">未来での労働変化</a>
-      <a href="#bi">BIは何をもたらすか</a>
-      <a href="#value">価値の再発見</a>
-      <a href="#human">代替困難性</a>
-      <a href="#happy">現在と未来の"普通"</a>
-      <a href="#essence">本質</a>
-    </nav>
-  </header>
+    <a class="skip" href="#main">本文へスキップ</a>
+    <header>
+        <nav class="nav" aria-label="主要ナビゲーション">
+            <div class="brand"><span class="badge">Web</span></div>
+            <a href="#now"><strong>普通</strong>とは何か</a>
+            <a href="#future">未来での労働変化</a>
+            <a href="#bi">BIは何をもたらすか</a>
+            <a href="#value">価値の再発見</a>
+            <a href="#human">代替困難性</a>
+            <a href="#happy">現在と未来の"普通"</a>
+            <a href="#essence">本質</a>
+        </nav>
+    </header>
 
-  <div class="hero">
-    <h1>それって"<span class="em">普通</span>"ですか？<br>— AIの発展がつくる未来の"普通"</h1>
-    <!-- <p>HTML/CSS/JavaScriptのみで構成したプレゼン用シングルページ。キーボード ←/→ でセクション移動。</p> -->
-    <div class="meta">
-      <span class="pill">AIがもたらす社会の"普通"の再設計</span>
-      <span class="pill">「人間にしか出来ないこと」とはなにか</span>
-      <span class="pill">現在と未来の"普通"</span>
+    <div class="hero">
+        <h1>それって"<span class="em">普通</span>"ですか？<br>— AIの発展がつくる未来の"普通"</h1>
+        <!-- <p>HTML/CSS/JavaScriptのみで構成したプレゼン用シングルページ。キーボード ←/→ でセクション移動。</p> -->
+        <div class="meta">
+            <span class="pill">AIがもたらす社会の"普通"の再設計</span>
+            <span class="pill">「人間にしか出来ないこと」とはなにか</span>
+            <span class="pill">現在と未来の"普通"</span>
+        </div>
     </div>
-  </div>
 
-  <main id="main" class="container">
-    <!-- "普通"とは何か・現在の"普通"とその背景 -->
-    <section id="now" class="fade card" tabindex="0" aria-labelledby="h-now">
-      <h2 id="h-now">"普通"とは何か</h2>
-      <div class="grid g2">
-        <div>
-          <h3>定義（いま）</h3>
-          <!-- <p></p> -->
-          <ul>
-            <li>現代社会では、<strong>「働くことを通じて生活を成り立たせ、安定と安心を得る」</strong>という生き方が広く共有されており、それが"普通"である。</li>
-            <li>経済的な成功は、長らく「努力」や「幸福」の象徴とされてきた。</li>
-            <li>このような価値観は、産業社会以降の「労働中心の仕組み」や「生産性の向上を前提とした社会設計」に支えられてきた。</li>
-          </ul>
-          <p>しかし、AIの進化はその前提「働くことが生きることの中心である」という考えを問い直しつつある。</p>
-        </div>
-        <div class="card">
-          <h3>あなたのワークライフバランス</h3>
-          <p>仕事が生活に占める割合はどのくらいですか？</p>
-          <div class="meter">
-            <input type="range" id="score" min="0" max="100" value="60" aria-label="ワークライフバランス・スコア" />
-          </div>
-          <div class="kpi" style="margin-top:8px">
-            <div class="num" id="scoreNum">60</div>
-            <div id="scoreLabel" class="tag">働きすぎ予備軍：向上心が強い反面、休むことに罪悪感を覚えていませんか？心と身体の余白を意識して。</div>
-          </div>
-          <p class="muted" style="color:var(--muted); margin-top:8px">数値がサーバーへ送信されることはありません。</p>
-        </div>
-      </div>
-    </section>
+    <main id="main" class="container">
+        <!-- "普通"とは何か・現在の"普通"とその背景 -->
+        <section id="now" class="fade card" tabindex="0" aria-labelledby="h-now">
+            <h2 id="h-now">"普通"とは何か</h2>
 
-    <!-- 未来での労働はどのように変化するか -->
-    <section id="future" class="fade card" tabindex="0" aria-labelledby="h-future">
-      <h2 id="h-future">未来での労働はどのように変化するか</h2>
-      <div class="timeline grid g2" style="gap:24px">
-        <div class="t-item">
-          <div class="t-dot" aria-hidden="true"></div>
-          <h3>2030年代 : 労働時間が段階的に短縮</h3>
-          <p>平均労働時間が <strong>週30時間→20時間</strong> へ。<span class="tag">週休4日</span> が普及し、ワークライフバランスが大幅に改善。</p>
-          <ul>
-            <li>今まで以上に、余暇を過ごす時間が長くなる。</li>
-            <li><u>業務は大幅に効率化されるものの、まだ人間の意思決定に大幅依存。</u></li>
-          </ul>
-        </div>
-        <div class="t-item">
-          <div class="t-dot" aria-hidden="true" style="background:var(--accent)"></div>
-          <h3>2040年代 : 衣食住が担保される"普通"</h3>
-          <p>基礎所得＋公共配当が常設化し、<strong>働かなくても衣食住は標準で担保</strong>。働くことは<strong>選好</strong>へ。</p>
-          <ul>
-            <li>極論、"贅沢"を必要としなければ労働の必要性が無くなる。</li>
-            <li><u>絶対的貧困は無くなったところで、相対的(他者比較)貧困は残り続ける。</u></li>
-            <li><u>働かなくても生きていける時代は、モチベーションや目的意識を失うリスクがある。</u></li>
-          </ul>
-        </div>
-      </div>
-      <aside class="warning card" role="note" aria-label="注意事項">
-        <strong>⚠️ 注意</strong>
-        <p>これらの2030年、2040年論はかなり楽観的な推測である。</p>
-        <p>ベーシックインカムの実現には大幅な生産性の上昇・財源と再分配合意・政治経済的摩擦の解消が不可欠である。</p>
-        <p class="muted">→ 企業のAI使用に対する適切な課税、技術の進化による人間の価値観の変化によって、実現する可能性もある。</p>
-      </aside>
-    </section>
+            <div class="card" style="margin-bottom: 20px; background: rgba(125, 211, 252, 0.05); border-left: 3px solid var(--brand);">
+                <h3>"普通"の構成要素</h3>
+                <p>"普通"を構成する「社会・他者・自分」の相互作用は、具体的に3つの領域(法・市場・世間)で発生している。</p>
+                <ol style="margin: 12px 0; padding-left: 20px; line-height: 1.7;">
+                    <li><strong>「法」が定義する"普通"（社会）</strong>: 法律や制度が定める最低限のライン（例：義務教育、納税、法定労働時間）。これは国家権力による「公的な"普通"」である。</li>
+                    <li><strong>「市場」が定義する"普通"（他者との比較）</strong>: 市場経済における「平均」や「中央値」（例：平均年収、平均的なキャリアパス）。これは経済合理性に基づく「相対的な"普通"」であり、人々が「人並み」を意識する際の最大の参照先である。</li>
+                    <li><strong>「世間」が定義する"普通"（自分と他者の関係）</strong>: 所属するコミュニティの同調圧力や「暗黙の了解」（例：「良い年齢なのだから結婚すべきだ」「残業するのが当たり前だ」）。これは情緒的な「ローカルな"普通"」である。</li>
+                </ol>
+            </div>
 
-    <!-- ベーシックインカムは何をもたらすか -->
-    <section id="bi" class="fade card" tabindex="0" aria-labelledby="h-bi">
-      <h2 id="h-bi">ベーシックインカムは何をもたらすか</h2>
-      <div class="grid g3">
-        <div class="card">
-          <h3>「余暇の創造的爆発」の可能性</h3>
-          <ul>
-            <li>古代ギリシャの市民が哲学を発展させたように、余暇が知的・文化的繁栄をもたらす。</li>
-            <li>ゲーム、スポーツ、アートが「生産性」から解放され、純粋な喜びとして再発見される。</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>失敗する自由</h3>
-          <ul>
-            <li>起業・創作・研究に挑戦しても生活が保証される。</li>
-            <li>「失敗が許される社会」は、イノベーションを加速させる。</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>ケアの充実</h3>
-          <ul>
-            <li>家族の介護、子育て、地域活動に専念できる。</li>
-            <li>人間関係の質が劇的に向上する可能性がある。</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            <div class="grid g2">
+                <div>
+                    <h3>定義（いま）</h3>
+                    <!-- <p></p> -->
+                    <ul>
+                        <li>現代社会では、<strong>「働くことを通じて生活を成り立たせ、安定と安心を得る」</strong>という生き方が広く共有されており、それが"普通"である。</li>
+                        <li>経済的な成功は、長らく「努力」や「幸福」の象徴とされてきた。</li>
+                        <li>日本社会を含む多くの国では、「労働」は単なる経済活動ではなく、「人としての正しさ」や「社会貢献」と直結した道徳的な行為とみなされる。</li>
+                        <li>このような価値観は、産業社会以降の「労働中心の仕組み」や「生産性の向上を前提とした社会設計」に支えられてきた。</li>
+                    </ul>
+                    <p>しかし、AIの進化はその前提「働くことが生きることの中心である」という考えを問い直しつつある。</p>
+                </div>
+                <div class="card">
+                    <h3>あなたのワークライフバランス</h3>
+                    <p>仕事が生活に占める割合はどのくらいですか？</p>
+                    <div class="meter">
+                        <input type="range" id="score" min="0" max="100" value="60" aria-label="ワークライフバランス・スコア" />
+                    </div>
+                    <div class="kpi" style="margin-top:8px">
+                        <div class="num" id="scoreNum">60</div>
+                        <div id="scoreLabel" class="tag">働きすぎ予備軍：向上心が強い反面、休むことに罪悪感を覚えていませんか？心と身体の余白を意識して。</div>
+                    </div>
+                    <p class="muted" style="color:var(--muted); margin-top:8px">数値がサーバーへ送信されることはありません。</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- 未来での価値の再発見 -->
-    <section id="value" class="fade card" tabindex="0" aria-labelledby="h-value">
-      <h2 id="h-value">未来での価値の再発見</h2>
-      <div class="grid g3">
-        <div class="card">
-          <h3>人間の"ゆらぎ"が価値</h3>
-          <p>AIが模倣を極めるほど、<strong>不完全さ</strong>や<strong>感情のゆらぎ</strong>にプレミアムがつく。</p>
-          <span class="tag">手作り / 生演奏 / 直筆</span>
-        </div>
-        <div class="card">
-          <h3>第一次産業とアートの再興</h3>
-          <p>人間の生来の姿である、<strong>第一次産業(農業・林業・漁業)やアート</strong>の分野が盛りあがることが期待できる。</p>
-          <span class="tag">共同菜園 / 手工芸 / 創作活動</span>
-        </div>
-        <div class="card">
-          <h3>田舎暮らしの価値</h3>
-          <p>都会に住む必要がなくなり、<strong>田舎暮らし</strong>が価値を持つ。</p>
-          <span class="tag">自然との共生 / スローライフ</span>
-        </div>
-      </div>
-    </section>
+        <!-- 未来での労働はどのように変化するか -->
+        <section id="future" class="fade card" tabindex="0" aria-labelledby="h-future">
+            <h2 id="h-future">未来での労働はどのように変化するか</h2>
+            <div class="timeline grid g2" style="gap:24px">
+                <div class="t-item">
+                    <div class="t-dot" aria-hidden="true"></div>
+                    <h3>2030年代：労働時間が段階的に短縮</h3>
+                    <p>平均労働時間が <strong>週30時間→20時間</strong> へ。<span class="tag">週休4日</span> が普及し、ワークライフバランスが大幅に改善。</p>
+                    <ul>
+                        <li>今まで以上に、余暇を過ごす時間が長くなる。</li>
+                    </ul>
+                    <aside class="note card" role="note" aria-label="2030年代の世界">
+                        <strong>💡 2030年代の世界</strong>
+                        <p>2030年代には、人々は週休4日が当たり前になり、空いた時間で「もう一つの人生」を生き始める。</p>
+                        <p>平日は会社員として働き、週末はミュージシャンや農家、ボランティアとして活動する人が増えていく。</p>
+                        <p>仕事は単なる"収入の手段"ではなく、"自分を表現する場"へと変わっていく。</p>
+                        <p>AIが事務作業や分析を肩代わりすることで、人間はより創造的で、人と関わる時間に集中できるようになる。</p>
+                        <p class="muted">誰もが「本当にやりたかったこと」に一歩踏み出せる時代——<br>それが2030年代の"働く"ということの新しい意味になる。</p>
+                    </aside>
+                    <p style="margin-top: 12px;"><u>業務は大幅に効率化されるものの、まだ人間の意思決定に大幅依存。</u></p>
+                </div>
+                <div class="t-item">
+                    <div class="t-dot" aria-hidden="true" style="background:var(--accent)"></div>
+                    <h3>2040年代：衣食住が担保される"普通"</h3>
+                    <p>基礎所得＋公共配当が常設化し、<strong>働かなくても衣食住は標準で担保</strong>。働くことは<strong>選好</strong>へ。</p>
+                    <ul>
+                        <li>極論、"贅沢"を必要としなければ労働の必要性が無くなる。</li>
+                    </ul>
+                    <aside class="note card" role="note" aria-label="2040年代の世界">
+                        <strong>💡 2040年代の世界</strong>
+                        <p>2040年代には、生活が保障される社会が実現し、人々は"生きるため"ではなく"表現するため"に働くようになる。</p>
+                        <p>絵を描くこと、地域の森を守ること、子どもに物語を語ること——</p>
+                        <p>そんな小さな行為が、社会全体の豊かさを形づくる"新しい労働"として価値を持つ。</p>
+                        <p>人々は自分の好奇心をそのまま社会貢献に変え、AIはその挑戦を支える相棒となる。</p>
+                        <p class="muted">「好きなこと」と「誰かの役に立つこと」が重なり合う世界。<br>そこでは、働くことが義務ではなく、喜びの循環となっていく。</p>
+                    </aside>
+                    <p style="margin-top: 12px;"><u>働かなくても生きていける時代は、モチベーションや目的意識を失うリスクがある。</u></p>
+                </div>
+            </div>
+            <aside class="warning card" role="note" aria-label="注意事項">
+                <strong>⚠️ 注意</strong>
+                <p>これらの2030年、2040年論はかなり楽観的な推測である。</p>
+                <p>ベーシックインカムの実現には大幅な生産性の上昇・財源と再分配合意・政治経済的摩擦の解消が不可欠である。</p>
+                <p class="muted">→ 企業のAI使用に対する適切な課税、技術の進化による人間の価値観の変化によって、実現する可能性もある。</p>
+            </aside>
+        </section>
 
-    <!-- 「代替困難性」から見る、AIに奪われない仕事 -->
-    <section id="human" class="fade card" tabindex="0" aria-labelledby="h-human">
-      <h2 id="h-human">「代替困難性」から見る、AIに奪われない仕事</h2>
-      <p>AIやロボットが発展しても、「人間にしかできない仕事」は依然として存在する。</p>
-      <p>それは<strong>"予測不能性"、"関係性"、"意味創造性"</strong>の3軸で説明できる。</p>
-      <div class="grid g3">
-        <div class="card">
-          <h3>① 予測不能性</h3>
-          <p>定型化できない状況への即興的判断。</p>
-          <ul>
-            <li>救急医療・災害対応</li>
-            <li>教育・カウンセリング</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>② 関係性</h3>
-          <p>人と人の信頼・感情の共鳴を扱う。</p>
-          <ul>
-            <li>看護・介護・接客・営業</li>
-            <li>アート・教育</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>③ 意味創造性</h3>
-          <p>価値や美を"創り出す"営み。</p>
-          <ul>
-            <li>研究・デザイン・物語制作</li>
-            <li>芸術・キュレーション</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        <!-- ベーシックインカムは何をもたらすか -->
+        <section id="bi" class="fade card" tabindex="0" aria-labelledby="h-bi">
+            <h2 id="h-bi">ベーシックインカムは何をもたらすか</h2>
+            <div class="grid g3">
+                <div class="card">
+                    <h3>「余暇の創造的爆発」の可能性</h3>
+                    <ul>
+                        <li>古代ギリシャの市民が哲学を発展させたように、余暇が知的・文化的繁栄をもたらす。</li>
+                        <li>ゲーム、スポーツ、アートが「生産性」から解放され、純粋な喜びとして再発見される。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>失敗する自由</h3>
+                    <ul>
+                        <li>起業・創作・研究に挑戦しても生活が保証される。</li>
+                        <li>「失敗が許される社会」は、イノベーションを加速させる。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>ケアの充実</h3>
+                    <ul>
+                        <li>家族の介護、子育て、地域活動に専念できる。</li>
+                        <li>人間関係の質が劇的に向上する可能性がある。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <!-- 現在と未来の"普通" -->
-    <section id="happy" class="fade card" tabindex="0" aria-labelledby="h-happy">
-      <h2 id="h-happy">現在と未来の"普通"</h2>
-      <blockquote style="margin: 0 0 16px; padding-left: 12px; border-left: 3px solid var(--brand); color: var(--muted);">
-        "普通"とは、社会・他者・自分の3つの相互作用から生まれる相対的概念である。
-      </blockquote>
-      <p>テクノロジーによって大きく変わった未来では、これらの3つの状況も大きく変わる。<br>
-      → 現在では"普通"なことも、未来では"普通"では無い。</p>
-      <div style="overflow-x: auto; margin-top: 16px;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-          <thead>
-            <tr style="border-bottom: 2px solid var(--brand);">
-              <th style="padding: 12px 8px; font-weight: 600;">内容</th>
-              <th style="padding: 12px 8px; font-weight: 600;">現在(2025年)</th>
-              <th style="padding: 12px 8px; font-weight: 600;">未来(2040年)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #2a3140;">
-              <td style="padding: 10px 8px;"><strong>なぜ働くか</strong></td>
-              <td style="padding: 10px 8px;">明日の衣食住のため</td>
-              <td style="padding: 10px 8px;">自己表現・貢献のため</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #2a3140;">
-              <td style="padding: 10px 8px;"><strong>なぜ学ぶか</strong></td>
-              <td style="padding: 10px 8px;">就職・安定のため</td>
-              <td style="padding: 10px 8px;">探究・好奇心・社会課題解決</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #2a3140;">
-              <td style="padding: 10px 8px;"><strong>なにが幸せか</strong></td>
-              <td style="padding: 10px 8px;">経済的成功・安定</td>
-              <td style="padding: 10px 8px;">自己実現・余暇の充実</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #2a3140;">
-              <td style="padding: 10px 8px;"><strong>なにを所有するか</strong></td>
-              <td style="padding: 10px 8px;">物・不動産・お金</td>
-              <td style="padding: 10px 8px;">体験・関係・信用・データ</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px 8px;"><strong>なにが価値か</strong></td>
-              <td style="padding: 10px 8px;">効率・競争・生産性</td>
-              <td style="padding: 10px 8px;">意味・共感・体験の質</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <!-- 未来での価値の再発見 -->
+        <section id="value" class="fade card" tabindex="0" aria-labelledby="h-value">
+            <h2 id="h-value">未来での価値の再発見</h2>
+            <div class="grid g3">
+                <div class="card">
+                    <h3>モノ(データ)からコト(体験)へ</h3>
+                    <p>AIが生成した音楽は完璧かもしれないが、<strong>「目の前で生身の人間が汗を流して演奏するライブ」の熱量</strong>には敵わない。価値は「モノ」から「コト」へ移行する。</p>
+                    <span class="tag">ライブ体験 / 手仕事の温もり / 人との出会い</span>
+                </div>
+                <div class="card">
+                    <h3>人間の"ゆらぎ"と"物語"が価値</h3>
+                    <p>"手作り"と言われると付加価値を感じるように、人間が作ったこと、人間が描いたことなどに多くの価値が生まれる。これは、「物」ではなくそのものが持つ<strong>「物語」</strong>に価値があるとも言える。</p>
+                    <p>AIが模倣を極めるほど、<strong>不完全さ</strong>や<strong>感情のゆらぎ</strong>にプレミアムがつく。</p>
+                    <span class="tag">手作り / 生演奏 / 直筆</span>
+                </div>
+                <div class="card">
+                    <h3>第一次産業とアートの再興</h3>
+                    <p>人間の生来の姿である、<strong>第一次産業(農業・林業・漁業)やアート</strong>の分野が盛りあがることが期待できる。</p>
+                    <span class="tag">共同菜園 / 手工芸 / 創作活動</span>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 16px;">
+                <h3>田舎暮らしの価値</h3>
+                <p>近代以降続いていた<strong>"都市集中"</strong>がなくなり、<strong>田舎暮らし</strong>が価値を持つ。</p>
+                <span class="tag">自然との共生 / スローライフ / 地域コミュニティ</span>
+            </div>
+        </section>
 
-    <!-- 本質 -->
-    <section id="essence" class="fade card" tabindex="0" aria-labelledby="h-essence">
-      <h2 id="h-essence">本質</h2>
-      <ul>
-        <li>"普通"は <strong>社会・他者・自分</strong> の相互作用による<strong>相対概念</strong>である。</li>
-        <li>テクノロジーの進化のたびに"普通"は<strong>再設計</strong>されてきた。</li>
-        <li>また"普通"の概念を破壊するのも、テクノロジーである。</li>
-        <li>産業革命が「機械による肉体の代替」を生んだように、AI革命は<strong>「知能による思考の代替」</strong>を起こす。</li>
-      </ul>
-      <p class="footer">🄯 Kotaro Midorikawa / テーマ「それって普通ですか？」- AIの発展がつくる未来の"普通" - </p>
-      <p class="footer"><a href= "https://github.com/kmch4n/Is_that_normal" target="_blank">コードを閲覧</a></p>
-    </section>
-  </main>
+        <!-- 「代替困難性」から見る、AIに奪われない仕事 -->
+        <section id="human" class="fade card" tabindex="0" aria-labelledby="h-human">
+            <h2 id="h-human">「代替困難性」から見る、AIに奪われない仕事</h2>
+            <p>AIやロボットが発展しても、「人間にしかできない仕事」は依然として存在する。</p>
+            <p>それは<strong>"予測不能性"、"関係性"、"意味創造性"</strong>の3軸で説明できる。</p>
+            <div class="grid g3">
+                <div class="card">
+                    <h3>① 予測不能性</h3>
+                    <p>定型化できない状況への即興的判断。</p>
+                    <ul>
+                        <li>救急医療・災害対応</li>
+                        <li>教育・カウンセリング</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>② 関係性</h3>
+                    <p>人と人の信頼・感情の共鳴を扱う。</p>
+                    <ul>
+                        <li>看護・介護・接客・営業</li>
+                        <li>アート・教育</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>③ 意味創造性</h3>
+                    <p>価値や美を"創り出す"営み。</p>
+                    <ul>
+                        <li>研究・デザイン・物語制作</li>
+                        <li>芸術・キュレーション</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 16px;">AIは「効率性」では圧倒的に勝るものの、<br>
+            「意味を作る」「共感する」「曖昧な状況に対応する」という次元ではまだ人間が優位にある。</p>
+        </section>
 
-  <script src="script.js" defer></script>
+        <!-- 現在と未来の"普通" -->
+        <section id="happy" class="fade card" tabindex="0" aria-labelledby="h-happy">
+            <h2 id="h-happy">現在と未来の"普通"</h2>
+            <blockquote style="margin: 0 0 16px; padding-left: 12px; border-left: 3px solid var(--brand); color: var(--muted);">
+                "普通"とは、社会・他者・自分の3つの相互作用から生まれる相対的概念である。
+            </blockquote>
+            <p>テクノロジーによって大きく変わった未来では、これらの3つの状況も大きく変わる。<br>
+            → 現在では"普通"なことも、未来では"普通"では無い。</p>
+            <div style="overflow-x: auto; margin-top: 16px;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 2px solid var(--brand);">
+                            <th style="padding: 12px 8px; font-weight: 600;">内容</th>
+                            <th style="padding: 12px 8px; font-weight: 600;">現在(2025年)</th>
+                            <th style="padding: 12px 8px; font-weight: 600;">未来(2040年)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なぜ働くか</strong></td>
+                            <td style="padding: 10px 8px;">明日の衣食住のため</td>
+                            <td style="padding: 10px 8px;">自己表現・貢献のため</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なぜ学ぶか</strong></td>
+                            <td style="padding: 10px 8px;">就職・安定のため</td>
+                            <td style="padding: 10px 8px;">探究・好奇心・社会課題解決</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なにが幸せか</strong></td>
+                            <td style="padding: 10px 8px;">経済的成功・安定</td>
+                            <td style="padding: 10px 8px;">自己実現・余暇の充実</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なにを所有するか</strong></td>
+                            <td style="padding: 10px 8px;">物・不動産・お金</td>
+                            <td style="padding: 10px 8px;">体験・関係・信用・データ</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なにが価値か</strong></td>
+                            <td style="padding: 10px 8px;">効率・競争・生産性</td>
+                            <td style="padding: 10px 8px;">意味・共感・体験の質</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なにがステータスか</strong></td>
+                            <td style="padding: 10px 8px;">役職・年収・所属企業</td>
+                            <td style="padding: 10px 8px;">フォロワー数・信頼度・創造性・コミュニティへの貢献度</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #2a3140;">
+                            <td style="padding: 10px 8px;"><strong>なにが"リスク"か</strong></td>
+                            <td style="padding: 10px 8px;">失業・貧困・失敗</td>
+                            <td style="padding: 10px 8px;">孤独・無意味感</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 8px;"><strong>"教育"とは何か</strong></td>
+                            <td style="padding: 10px 8px;">知識のインプット・正解の暗記</td>
+                            <td style="padding: 10px 8px;">問いを立てる力・AIの使いこなし・他者との対話</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 本質 -->
+        <section id="essence" class="fade card" tabindex="0" aria-labelledby="h-essence">
+            <h2 id="h-essence">本質</h2>
+            <ul>
+                <li>"普通"は <strong>社会・他者・自分</strong> の相互作用による<strong>相対概念</strong>である。</li>
+                <li>テクノロジーの進化のたびに"普通"は<strong>再設計</strong>されてきた。</li>
+                <li>また"普通"の概念を破壊するのも、テクノロジーである。</li>
+                <li>産業革命が「機械による肉体の代替」を生んだように、AI革命は<strong>「知能による思考の代替」</strong>を起こす。</li>
+            </ul>
+            <p class="footer">🄯 Kotaro Midorikawa / テーマ「それって普通ですか？」- AIの発展がつくる未来の"普通" - </p>
+            <p class="footer"><a href= "https://github.com/kmch4n/Is_that_normal" target="_blank">コードを閲覧</a></p>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>

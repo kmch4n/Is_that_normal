@@ -367,6 +367,27 @@ li {
   line-height: 1.6
 }
 
+/* Note box styles (blue info boxes) */
+.note.card {
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.12), rgba(125, 211, 252, 0.05)) !important;
+  border-left: 4px solid var(--brand);
+  padding: 16px 20px;
+  margin-top: 16px
+}
+
+.note strong {
+  display: block;
+  color: var(--brand);
+  margin-bottom: 8px;
+  font-size: 1.05em
+}
+
+.note p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 0.95em
+}
+
 /* 追加スタイル：引用 */
 blockquote,
 .quote {
